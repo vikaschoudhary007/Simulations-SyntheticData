@@ -33,6 +33,8 @@
 ### 4. Download Binaries
 
 * For Linux - [Link](https://github.com/Microsoft/AirSim/releases)
+  
+  Download the `AirSimNH.zip` file to follow this tutorial, extract the files and then run the following commands
 
 ### 5. Run Simulation
 
