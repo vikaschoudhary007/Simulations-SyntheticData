@@ -104,3 +104,62 @@
 
   #### Depth
   ![Depth Scene](out/airsim_get_ground_truth/depth.png)
+
+
+### 6. Get Google Maps for ruuning simulations in Custom Environment
+
+* **Create a custom binary with google maps API to get a real world environment for simulation using unreal engine and Cesium plugin.**
+
+  #### The Installation steps are similar to AirSim
+
+* Step 1
+  ```
+  # Clone the Unreal Engine source code
+  git clone -b 4.27 https://github.com/EpicGames/UnrealEngine.git
+  cd UnrealEngine
+
+  # Run the setup script
+  ./Setup.sh
+
+  # Generate project files
+  ./GenerateProjectFiles.sh
+
+  # Build Unreal Engine
+  make
+
+  ```
+
+* Step 2
+  
+  Make the following changes to build - [Follow this youtube video](https://www.youtube.com/watch?v=jJ4mqo4Ge8U&t=585s)
+
+  ```
+  # Clone the AirSim repository
+  git clone https://github.com/microsoft/AirSim.git
+  cd AirSim
+
+  # Run the build script
+  ./build.sh
+  ```
+
+* Step 3 - Launch Unreal Engine & create a new blank project
+  
+  Download the cesium plugin for Unreal Engine [Link](https://github.com/CesiumGS/cesium-unreal/releases)
+
+  ```
+  copy it inside /<path to unreal>/Engine/plugins
+  will have to build Unreal Engine Again
+
+  ```
+
+* Step 4 - Google Maps API
+  For Cesium need Google Maps API - Need a google cloud account - free tier provides the API :)
+
+  - Launch UnrealEditor
+  - Edit -> Enable cesium plugin -> restart editor
+  - Add layer & components
+  - Add -> `API KEY` in Cesium3Dtileset
+  - Enable Cesium GeoReference 
+  - Input Longitude & Latitude
+
+  **Can also connect Cesium ION with Epic Games Account -> `No need for Google API then`**
