@@ -41,8 +41,66 @@
   chmod +x ./AirSimNH.sh 
   ./AirSimNH.sh -windowed
   ```
+
 * **Script for drone simulation and data capturing**
   The ``path.py`` file in scripts is present inside ``AirSim/PythonClient/multirotor`` folder, execute this file to run simulation and generate synthetic data from cameras.
-* ``setings.json`` file is created once you start the bianry for the first time, see the [docs](https://microsoft.github.io/AirSim/settings/) to make chnages. the one I use is present in the scripts folder.
+
+* ``setings.json`` file is created once you start the bianry for the first time, see the [docs](https://microsoft.github.io/AirSim/settings/) to make chnages. the one used in this tutorial is present in the scripts folder.
+  
 * This step will generate image data from drone sensors(depth, segmentation and original image data)
-*
+  ##### run the python code [scripts/generate_data.py](scripts/generate_data.py)
+  ##### make sure to cop this file in AirSim/PythonClient/multirotor folder before running since this script uses a `setup_path.py` file provided by AirSim
+  ```
+  # This file should be present in the AirSim/PythonClient/multirotor folder
+  python3 ./generate_data.py
+  ```
+  #### Here are the results for this step :
+
+  **Results are in `out/airsim_generate_data` folder**
+    
+  #### Image
+  ![Sample Original Image Data](out/airsim_generate_data/scene.png)
+
+  #### Segmentation
+  ![Segmentation Data](out/airsim_generate_data/segmentation.png)
+
+  #### Depth
+  ![Depth Scene](out/airsim_generate_data/depth.png)
+
+* This step will generate image data from drone sensors(depth, segmentation and original image data) along with the ground truth labels
+  ##### run the python code [scripts/generate_data_and_ground_truth.py](scripts/generate_data_and_ground_truth.py)
+  ##### make sure to cop this file in AirSim/PythonClient/multirotor folder before running since this script uses a `setup_path.py` file provided by AirSim
+  ```
+  # This file should be present in the AirSim/PythonClient/multirotor folder
+  python3 ./generate_data_and_ground_truth.py
+  ```
+  #### Here are the results for this step :
+
+  **Results are in `out/airsim_get_ground_truth` folder**
+
+  ### Ground Truth Labels - data from drone sensors
+  ```
+  Position: <Vector3r> {   'x_val': 0.001768288784660399,
+    'y_val': -3.83308744430542,
+    'z_val': -5.494985580444336}
+  Orientation: <Quaternionr> {   'w_val': -0.7062404155731201,
+    'x_val': -0.028552450239658356,
+    'y_val': 0.02919490821659565,
+    'z_val': -0.7067934274673462}
+  Velocity: <Vector3r> {   'x_val': -0.015148111619055271,
+    'y_val': 11.24450397491455,
+    'z_val': 0.1306181252002716}
+  Angular_Velocity: <Vector3r> {   'x_val': -0.00037339984555728734,
+    'y_val': 0.08318130671977997,
+    'z_val': -0.0012482452439144254}
+
+  ```
+    
+  #### Image
+  ![Sample Original Image Data](out/airsim_get_ground_truth/scene.png)
+
+  #### Segmentation
+  ![Segmentation Data](out/airsim_get_ground_truth/segmentation.png)
+
+  #### Depth
+  ![Depth Scene](out/airsim_get_ground_truth/depth.png)
