@@ -55,7 +55,7 @@ Providing ``jsbsim.FGFDMExec`` with the value ``None`` in the ``Sample`` script 
   - Multiple Time Notifications
   - Autopilot settings
 * Output is stored as a ``csv`` data file with aircraft and environment data at different time instances.
-  [out/JSBout172B.csv](scripts/Sample.py)
+  [out/JSBout172B.csv](out/JSBout172B.csv)
 
 ### 5. In order to get the path of directory where default aircraft data is located use the following command :-
 
