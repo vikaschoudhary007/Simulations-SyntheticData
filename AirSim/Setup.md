@@ -108,7 +108,7 @@
   ![Depth Scene](out/airsim_get_ground_truth/depth.png)
 
 
-### 6. Get Google Maps for ruuning simulations in Custom Environment
+### 6. Get Google Maps for running simulations in Custom Environment
 
 * **Create a custom binary with google maps API to get a real world environment for simulation using unreal engine and Cesium plugin.**
 
