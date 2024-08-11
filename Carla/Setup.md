@@ -18,7 +18,7 @@
 
   conda -version
   ```
-* Check Python & Pip Version
+* Create a conda environment
   ```
   #create conda env
   conda create --name carla_env python=3.9
@@ -42,6 +42,7 @@ pip -V
 ```
 
 #### If you want to upgrade
+
 ```
 # For Python 3
  pip3 install --upgrade pip
@@ -52,6 +53,7 @@ pip -V
 ```
 
 #### Install numpy
+
 ```
 pip install --user pygame numpy &&
 pip3 install --user pygame numpy
@@ -59,13 +61,14 @@ pip3 install --user pygame numpy
 ```
 
 ### 3. CARLA Installation
+
 Download the stable release from [github](https://github.com/carla-simulator/carla/releases/tag/0.9.15)(this tutorial uses version 0.9.15)
 
 Import additional assets
 
-  - [Download](https://github.com/carla-simulator/carla/blob/master/Docs/download.md) appropriate package as per your CARLA version 
-  - Extract the package:
-  - move the package to the Import folder and run the following script to extract the contents:
+- [Download](https://github.com/carla-simulator/carla/blob/master/Docs/download.md) appropriate package as per your CARLA version
+- Extract the package:
+- move the package to the Import folder and run the following script to extract the contents:
 
 ```
  cd path/to/carla/root
@@ -74,12 +77,14 @@ Import additional assets
 ```
 
 #### Install client library
+
 ```
 # Python 3
  pip3 install carla
 ```
 
 #### Running CARLA
+
 ```
 cd path/to/carla/root
 
@@ -108,11 +113,11 @@ python3 manual_control.py
 
 ### 4. Run Simulation
 
-* **Script for autonomus driving(autp pilot) simulation and data capturing**
-  ```
-  ./scrips.sensor_camera.ipynb
-  ```
+* **Script for autonomous driving(auto pilot) simulation and data capturing**
 
+  ```
+  ./scrips/sensor_camera.ipynb
+  ```
 * **Results are in `out` folder**
 
 ![Sample Data Generated via Simulation](out/All%20Cameras_screenshot_23.07.2024.png)
