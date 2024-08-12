@@ -40,7 +40,7 @@ conda create --name infinigen python=3.10
 conda activate infinigen
 ```
 
-**This tutorial was on full install**
+**This tutorial is on full install**
 ```
 # Minimal install (No terrain or opengl GT, ok for Infinigen-Indoors or single-object generation) 
 INFINIGEN_MINIMAL_INSTALL=True pip install -e .

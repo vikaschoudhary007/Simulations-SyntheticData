@@ -1,4 +1,4 @@
-# This file contains the setup instructions for CARLA simulator specifically for simulations and synthetic data.
+# This file contains the setup instructions for CARLA simulator specifically for simulations and synthetic data generation.
 
 ### 1. **Install and setup conda environment**
 
@@ -29,7 +29,7 @@
 
 ### Prerequisites
 
-Before you begin, ensure that your system meets the requirements.
+Before you begin, ensure that your system meets the following requirements.
 
 #### Check Python & Pip Version
 

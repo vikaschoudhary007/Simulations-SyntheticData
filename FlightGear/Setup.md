@@ -1,4 +1,4 @@
-# This file contains the setup instructions for [FlightGear](https://www.flightgear.org/) simulator for UAVs simulations.
+# This file contains the setup instructions for UAVs simulation in [FlightGear](https://www.flightgear.org/) simulator.
 
 ### 1. **Install and setup conda environment**
 

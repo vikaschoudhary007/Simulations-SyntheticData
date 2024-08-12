@@ -21,7 +21,7 @@
 
 ### 2.  Install and setup Unreal Engine
 
-* Connect github to EpicGames account and download Unreal Engine for Linux
+* Connect github to [EpicGames](https://store.epicgames.com/en-US/) account and download Unreal Engine for Linux
 * Execute the ``unreal_engine_setup.sh`` file from scripts folder.
 
 ### 3. Download AirSim
@@ -45,7 +45,7 @@
   ```
 * **Script for drone simulation and data capturing**
   The ``path.py`` file in scripts is present inside ``AirSim/PythonClient/multirotor`` folder, execute this file to run simulation and generate synthetic data from cameras.
-* ``settings.json`` file is created once you start the binary for the first time, see the [docs](https://microsoft.github.io/AirSim/settings/) to make changes. the one used in this tutorial is present in the scripts folder.
+* ``settings.json`` file is created once you start the binary for the first time, see the [docs](https://microsoft.github.io/AirSim/settings/) to make changes, the one used in this tutorial is present in the scripts folder.
 * This step will generate image data from drone sensors(depth, segmentation and original image data)
 
   ##### run the python code [scripts/generate_data.py](scripts/generate_data.py)
@@ -122,7 +122,7 @@
 
 ### 6. Get Google Maps for running simulations in Custom Environment
 
-* **Create a custom binary with google maps API to get a real world environment for simulation using unreal engine and Cesium plugin.**
+* **Create a custom binary with google maps API to get a real world environment for simulation using unreal engine and [Cesium](https://cesium.com/) plugin.**
 
   #### The Installation steps are similar to AirSim
 * Step 1
